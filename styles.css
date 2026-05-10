@@ -1,0 +1,117 @@
+.olereg {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.olebold {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+/*^cute fonts I found on google fonts :3*/
+
+html{
+    color: hsl(321 100% 99%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg,#ffb6d9,#ffc8e2,#ffddee);
+    min-height: 100vh; /*So it spans the screen*/
+}
+
+h1{
+    font-size: 300%; 
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.blob {
+  animation: float 3s ease-in-out infinite; /*first time doing animation :D */
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.6;/*So its not too overwhelmingly saturated*/
+  width: 200px;
+  height: 200px;
+  background: #ff69e6;
+  z-index: -2; /*So its behind the stuff*/
+}
+
+.blob1 {
+  top: 10%;
+  left: 10%;
+  /*spacing the blobs out*/
+}
+
+.blob2 {
+  bottom: 50%;
+  right: 10%;
+}
+
+.blob3 {
+  top: 70%;
+  left: 40%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+    font-size: large;
+}
+
+a{
+    color: #e23cb0;
+}
+
+a:hover{
+    color: #2b001c;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; /*so it stays fixed at the top*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0; /*So it doesn't stick to the top*/
+}
+
+nav a{
+    color: rgb(255, 3, 242);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px); /*So it kind of looks like glass*/
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: rgba(255, 105, 180, 0.35);
+    color: white; /*inverts it on hover*/
+    transform: translateY(-2px);
+}
