@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>About Jolya</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="art/jyg.png" type="image/x-icon">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <style> 
+    #tspage, #tldr:hover{
+        background: rgba(255, 105, 180, 0.35);
+        color: white; /*inverts it on hover*/
+        transform: translateY(-2px);
+    }
+    #tspage:hover, #tldr{
+    color: rgb(255, 3, 242);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px); /*So it kind of looks like glass*/
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+    transition: 0.3s;
+    }
+    /*inverts the button of the page it's on by switching all the properties from the css file*/
+    #tldr{
+        width: fit-content;
+        
+    }
+    </style>
+    <body>
+        <nav>
+            <h4><a href="Home.html">Home</a></h4>
+            <h4><a href="About.html" id="tspage">About</a></h4>
+            <h4><a href="Portfolio.html">Portfolio</a></h4>
+            <h4><a href="Art.html">Art Portfolio</a></h4>
+            <h4><a href="Game.html">Minigame</a></h4>
+        </nav>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <h3 id="tldr"><a href="About.html">I don't mind reading</a></h3>
+        <div class="sections">
+            <div class="section" id="back">
+                <h3>Background</h3>
+                <p>I'm Jolya, and I was born in 2008. I am a Christian. Born Egypt, lived in Kuwait 4 years, Qatar 6 years, and Egypt 2 years. In 2020, I moved to Texas to pursue my academic dreams. I graduated a semester early from high school so I could have more time to work to save up for college and improve on my coding skills. I have two loving parents, and the sweetest little sister ever.</p>
+            </div>
+            <div class="section" id="interests">
+                <h3>Interests</h3>
+                <p>The ones that don't change: God, coding, art, Formula 1, and Stray kids.</p>
+            </div>
+            <div class="section" id="goals">
+                <h3>Goals</h3>
+                <p>I have two goals really, honor God with my life, and have a stable job doing what I love; coding.</p>
+            </div>
+        </div>
+        <footer>
+            <p class="olereg"><a href="mailto:jolyae.youssef@gmail.com">JolyaE.Youssef@gmail.com</a> &bull; <a href="https://github.com/JolyaE" target="_blank">@JolyaE</a> &bull; <a href="https://www.instagram.com/jolyae.youssef/" target="_blank">@jolyae.youssef</a><p>
+        </footer>
+    </body>
+</html>
