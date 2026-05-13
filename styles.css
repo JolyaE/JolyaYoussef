@@ -26,19 +26,19 @@ h1{
 
 @keyframes float {
   0% {
-    transform: translateY(0px);
+    transform: translate(0px, 0px);
   }
   25% {
-    transform: translateX(30px);
+    transform: translate(20px, -10px);
   }
   50% {
-    transform: translateX(0px);
+    transform: translate(0px, -20px);
   }
-  75%{
-    transform: translateY(-30px);
+  75% {
+    transform: translate(-20px, -10px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translate(0px, 0px);
   }
 }
 
@@ -55,19 +55,22 @@ h1{
 }
 
 .blob1 {
-  top: 10%;
-  left: 10%;
+    animation-duration: 3s;
+    top: 10%;
+    left: 10%;
   /*spacing the blobs out*/
 }
 
 .blob2 {
-  bottom: 50%;
-  right: 10%;
+    animation-duration: 8s;
+    bottom: 50%;
+    right: 10%;
 }
 
 .blob3 {
-  top: 70%;
-  left: 40%;
+    animation-duration: 5s;
+    top: 70%;
+    left: 40%;
 }
 
 footer{
@@ -114,4 +117,8 @@ nav a:hover{
     background: rgba(255, 105, 180, 0.35);
     color: white; /*inverts it on hover*/
     transform: translateY(-2px);
+}
+
+#tldr{
+    margin: 0 auto;
 }
