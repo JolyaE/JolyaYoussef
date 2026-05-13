@@ -98,6 +98,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 12px 0; /*So it doesn't stick to the top*/
+    z-index:1; /*So it stays upfront*/
 }
 
 nav a{
@@ -119,6 +120,34 @@ nav a:hover{
     transform: translateY(-2px);
 }
 
-#tldr{
+#tldr{   
     margin: 0 auto;
+}
+
+.section{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 8px 30px rgba(255,105,180,0.15);
+    
+}
+body{
+    padding-top:5%;
+}
+.sections{
+    display:flex;
+    flex-flow: column wrap;
+}
+#back{
+    margin-right: 45%;
+}
+#interests{
+    margin-left: 45%;
+}
+#goals{
+    margin-right: 45%;
 }
