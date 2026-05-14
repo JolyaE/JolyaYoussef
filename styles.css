@@ -157,3 +157,21 @@ body{
 ul{
     text-align: left;
 }
+
+#techprojects, #artprojects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+}
+
+#techprojects .section, #artprojects .section{
+    width: 300px;
+    margin: 0;
+}
+
+img{
+    border-radius: 20px;
+}
