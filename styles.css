@@ -44,7 +44,7 @@ h1{
 
 .blob {
   animation: float 3s ease-in-out infinite; /*first time doing animation :D */
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   filter: blur(30px);
   opacity: 0.6;/*So its not too overwhelmingly saturated*/
@@ -123,8 +123,11 @@ nav a:hover{
 #tldr{   
     margin: 0 auto;
 }
-
+.section h2{
+    color:#ac0170;
+}
 .section{
+    color:#880259;
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(12px);
     border-radius: 20px;
@@ -150,4 +153,7 @@ body{
 }
 #goals{
     margin-right: 45%;
+}
+ul{
+    text-align: left;
 }
