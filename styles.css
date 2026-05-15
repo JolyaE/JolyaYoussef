@@ -136,7 +136,12 @@ nav a:hover{
     width: 50%;
     border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 0 8px 30px rgba(255,105,180,0.15);
-    
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.section:hover{
+    transform: scale(1.03); /* enlarges slightly */
+    background: rgba(255,255,255,0.25); /* darker/more visible */
+    box-shadow: 0 12px 35px rgba(255,105,180,0.3);
 }
 body{
     padding-top:5%;
