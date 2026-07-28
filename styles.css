@@ -270,23 +270,6 @@ ul{
     outline: none;
 }
 
-/*.controls button,
-.word-guess button,
-.game-end button {
-    padding: 10px 14px;
-    border: none;
-    border-radius: 12px;
-    background: #e23cb0;
-    color: white;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.controls button:hover,
-.word-guess button:hover,
-.game-end button:hover {
-    background: #c2185b;
-}*/
 
 .game-end {
     text-align: center;
