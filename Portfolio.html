@@ -117,54 +117,176 @@
         <h1>Art Portfolio</h1>
         <p>With my favorite pieces, even if it's a little irrelevant, displayed from oldest to newest</p>
         <div class="sections" id="artprojects">
-            <div class="section">
+            <div class="section" onclick="document.getElementById('grpvinepu').showModal()">
                 <h3>Down in Grapevine</h3>
                 <img src="art/mainst.png" alt="Down in Grapevine" width="300px">
             </div>
-            <div class="section">
+            <dialog id="grpvinepu">
+                <h2>Details: Down in Grapevine</h2>
+                <img src="art/mainst.png" alt="Down in Grapevine" width="300px">
+                <p><strong>Medium:</strong> Pen</p>
+                <p><strong>Year:</strong> Fall 2024</p>
+                <p><strong>Note:</strong> This piece was actually selected to be in the GCISD art coloring book, which is still yet to be printed!</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+
+            <div class="section" onclick="document.getElementById('autmnbrdpu').showModal()">
                 <h3>The Autumn Bird</h3>
                 <img src="art/bird.png" alt="The Autumn Bird" width="300px">
             </div>
-            <div class="section">
+            <dialog id="autmnbrdpu">
+                <h2>Details: The Autumn Bird</h2>
+                <img src="art/bird.png" alt="The Autumn Bird" width="300px">
+                <p><strong>Medium:</strong> Paint Pen</p>
+                <p><strong>Year:</strong> Fall 2024</p>
+                
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('rosepu').showModal()">
                 <h3>The Winter Rose</h3>
                 <img src="art/rose.png" alt="The Winter Rose" width="300px">
             </div>
-            <div class="section">
+            <dialog id="rosepu">
+                <h2>Details: The Winter Rose</h2>
+                <img src="art/rose.png" alt="The Winter Rose" width="300px">
+                <p><strong>Medium:</strong> Oil Pastel</p>
+                <p><strong>Year:</strong> Fall 2024</p>
+                <p><strong>Note:</strong> This is my second favourite piece from after JYG^3!</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('cookiepu').showModal()">
                 <h3>Drawn From Scratch</h3>
                 <img src="art/cookies.png" alt="Drawn From Scratch" width="300px">
             </div>
-            <div class="section">
+            <dialog id="cookiepu">
+                <h2>Details: Drawn From Scratch</h2>
+                <img src="art/cookies.png" alt="Drawn From Scratch" width="300px">
+                <p><strong>Medium:</strong> Color Pencil</p>
+                <p><strong>Year:</strong> Spring 2025</p>
+                <p><strong>Note:</strong> It is named based on the fact that I baked, photographed, and illustrated these cookies all from scratch!</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('carpu').showModal()">
                 <h3>Model Jolya</h3>
                 <img src="art/car.png" alt="Model Jolya" width="300px">
             </div>
-            <div class="section">
+            <dialog id="carpu">
+                <h2>Details: Model Jolya</h2>
+                <img src="art/car.png" alt="Model Jolya" width="300px">
+                <p><strong>Medium:</strong> Charcoal</p>
+                <p><strong>Year:</strong> Spring 2025</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+            <!-- I might scrap this one
+            <div class="section" onclick="document.getElementById('posepu').showModal()">
                 <h3>Pose!</h3>
                 <img src="art/self.png" alt="Pose!" width="300px">
             </div>
-            <div class="section">
+            <dialog id="posepu">
+                <h2>Details: Pose!</h2>
+                <img src="art/self.png" alt="Pose!" width="300px">
+                <p><strong>Medium:</strong> Oil Pastel</p>
+                <p><strong>Year:</strong> Spring 2025</p>
+                <p>Note: Don't worry I hate the face too.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+            -->
+            <div class="section" onclick="document.getElementById('jygpu').showModal()">
                 <h3>JYG^3</h3>
                 <img src="art/jyg.png" alt="JYG^3" width="300px">
             </div>
-            <div class="section">
+            <dialog id="jygpu">
+                <h2>Details: JYG^3</h2>
+                <img src="art/jyg.png" alt="JYG^3" width="300px">
+                <p><strong>Mediums:</strong> Graphite, color pencil, paint pen, pen, watercolor, washi tape, alcohol markers, oil pastel, paper (origami butterflies)</p>
+                <p><strong>Year:</strong> Fall 2026</p>
+                <p><strong>Note:</strong> This is my favourite piece!</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('liespu').showModal()">
                 <h3>Alley of Lies</h3>
                 <img src="art/alley.png" alt="Alley of Lies" width="300px">
             </div>
-            <div class="section">
-                <h3>Sookie</h3>
+            <dialog id="liespu">
+                <h2>Details: Alley of Lies</h2>
+                <img src="art/alley.png" alt="Alley of Lies" width="300px">
+                <p><strong>Medium:</strong> Coffee</p>
+                <p><strong>Year:</strong> Fall 2026</p>
+                <p><strong>Note:</strong> It's named after the fact that the reference image is AI generated.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('sooniepu').showModal()">
+                <h3>Soonkie</h3>
                 <img src="art/cat.png" alt="Soonkie" width="300px">
             </div>
-            <div class="section">
+            <dialog id="sooniepu">
+                <h2>Details: Soonkie</h2>
+                <img src="art/cat.png" alt="Soonkie" width="300px">
+                <p><strong>Medium:</strong> India Ink</p>
+                <p><strong>Year:</strong> Fall 2026</p>
+                <p><strong>Note:</strong> It's named after the cat in the reference, Soonie, Lee Know's oldest cat.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <div class="section" onclick="document.getElementById('holypu').showModal()">
                 <h3>Holy Bird</h3>
                 <img src="art/lusu.png" alt="Holy Bird" width="300px">
             </div>
+            <dialog id="holypu">
+                <h2>Details: Holy Bird</h2>
+                <img src="art/lusu.png" alt="Holy Bird" width="300px">
+                <p><strong>Medium:</strong> Paint Pen</p>
+                <p><strong>Year:</strong> Fall 2026</p>
+                <p><strong>Note:</strong> This was a gift to my sister, who is named Holy.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+            <!-- I might scrap this one too
             <div class="section">
                 <h3>A Holiday Joyrney</h3>
                 <img src="art/card.png" alt="A Holiday Joyrney" width="200px" style="transform: rotate(-90deg);">
             </div>
-            <div class="section">
+            -->
+            <div class="section" onclick="document.getElementById('butterpu').showModal()">
                 <h3>Versatility</h3>
                 <img src="art/butterfly.png" alt="Versatility" width="300px">
             </div>
+            <dialog id="butterpu">
+                <h2>Details: Versatility</h2>
+                <img src="art/butterfly.png" alt="Versatility" width="300px">
+                <p><strong>Medium:</strong> Watercolor</p>
+                <p><strong>Year:</strong> Fall 2026</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
         </div>
 
 
