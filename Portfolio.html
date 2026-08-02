@@ -44,33 +44,75 @@
         <h1>Technical Portfolio</h1>
         <p>With only the noteworthy projects</p>
         <div class="sections" id="techprojects">
-            <div class="section">
+            <div class="section" onclick="document.getElementById('hmjPopup').showModal()">
                 <h3>Hangman</h3>
                 <h4>Language: Java</h4>
-                <p>About: allows the user to play hangman from the console using code in Java. Browses through a list for every round. Keeps track of score, amount of tries, and displays a hangman interpretation using characters for every wrong answer.</p>
-                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman_Java" target="_blank">https://github.com/JolyaE/Hangman_Java</a></p>
+                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman_Java" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/Hangman_Java</a>
+                </p>
             </div>
-            <div class="section">
+            <dialog id="hmjPopup">
+                <h2>Project Details: Hangman <br>(Java Edition)</h2>
+                <hr>
+                <p><strong>Language:</strong> Java</p>
+                <p><strong>Overview:</strong> This console-based game dynamically reads a word bank file, validates user inputs, updates game states in real-time, and renders custom ASCII art for every stage.</p>
+                <p>You can view the full source code and documentation directly on GitHub.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+
+
+            <div class="section" onclick="document.getElementById('hmsPopup').showModal()">
                 <h3>Hangman</h3>
                 <h4>Language: Swift</h4>
-                <p>About: allows the user to play hangman from the console using code in Swift. Browses through a list for every round. Keeps track of score, amount of tries, and displays a hangman interpretation using characters for every wrong answer. Helped me translate logic across languages and syntaxes.</p>
-                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman-Swift" target="_blank">https://github.com/JolyaE/Hangman-Swift</a></p>
+                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman-Swift" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/Hangman-Swift</a></p>
             </div>
-            <div class="section">
-                <h3>SUBmit</h3>
-                <h4>Languages: HTML, CSS, & JavaScript></></h4>
-                <p>About: A concept website that helps teachers ensure students are productive with substitutes and helps substitutes in general with class management. A project to demonstrate our speech group's shark tank pitch website. Minimally functional.Third ever web-based project.Still learning and improving. UI needs drastic improvement. There to assist conceptual understanding of our pitch. Worked on for ~6 hours because of timing constraints</p>
-                <p>Github Repository: <a href="https://github.com/JolyaE/SUBmit" target="_blank">https://github.com/JolyaE/SUBmit</a></p>
-            </div>
-            <div class="section">
+            <dialog id="hmsPopup">
+                <h2>Project Details: Hangman <br>(Swift Edition)</h2>
+                <p><strong>Language:</strong> Swift</p>
+                <p><strong>Overview:</strong> Allows the user to play hangman from the console using code in Swift. Browses through a list for every round. Keeps track of score, amount of tries, and displays a hangman interpretation using ASCII art for every stage. Helped me translate logic across languages and syntaxes.</p>
+                <p>You can view the full source code and documentation directly on GitHub.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+            
+            <div class="section" onclick="document.getElementById('keepPopup').showModal()">
                 <h3>KeepUp</h3>
-                <h4>Languages: HTML, CSS, & JavaScript</i></h4>
-                <p>About: A beginners' to do list intended to help students manage tasks. Initially made for first Computer Science III project.One of my first ever web projects as well.</p>
-                <p>Github Repository: <a href="https://github.com/JolyaE/KeepUp" target="_blank">https://github.com/JolyaE/KeepUp</a></p>
+                <h4>Languages: HTML, CSS, & JavaScript</h4>
+                <p>Github Repository: <a href="https://github.com/JolyaE/KeepUp" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/KeepUp</a></p>
             </div>
+            <dialog id="keepPopup">
+                <h2>Project Details: KeepUp</h2>
+                <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Overview:</strong> A beginners' to do list intended to help students manage tasks. Initially made for first Computer Science III project. One of my first ever web projects as well. To be honest I played around with it and had fun especially with the game window.</p>
+                <p>Link to deployment: <a href="https://keepup-lulu.netlify.app" target="_blank">https://keepup-lulu.netlify.app</a></p>
+                <p>You can view the full source code and documentation directly on GitHub.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
+            
+            <div class="section" onclick="document.getElementById('subPopup').showModal()">
+                <h3>SUBmit</h3>
+                <h4>Languages: HTML, CSS, & JavaScript</h4>
+                <p>Github Repository: <a href="https://github.com/JolyaE/SUBmit" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/SUBmit</a></p>
+            </div>
+            <dialog id="subPopup">
+                <h2>Project Details: SUBmit</h2>
+                <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Overview:</strong> A concept website that helps teachers ensure students are productive with substitutes and helps substitutes in general with class management. A project to demonstrate our speech group's shark tank pitch website. Minimally functional.Third ever web-based project. Still learning and improving. UI needs drastic improvement. Exists to assist conceptual understanding of our pitch. Worked on for ~6 hours because of timing constraints.</p>
+                <p>Link to deployment: <a href="https://submitsharktank.netlify.app/" target="_blank">https://submitsharktank.netlify.app/</a></p>
+                <p>You can view the full source code and documentation directly on GitHub.</p>
+                <form method="dialog">
+                    <button class="close-btn">Close Window</button>
+                </form>
+            </dialog>
 
+
+        </div>    
             <h2>Find more projects on my github: <a href="https://github.com/JolyaE" target="_blank">https://github.com/JolyaE</a></h2>
-        </div>
+        
 
         <h1>Art Portfolio</h1>
         <p>With my favorite pieces, even if it's a little irrelevant, displayed from oldest to newest</p>
