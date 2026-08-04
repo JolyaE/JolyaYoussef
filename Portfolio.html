@@ -38,30 +38,43 @@
             <h4><a href="Exp.html">Experience</a></h4>
             <h4><a href="Game.html">Minigame</a></h4>
         </nav>
+        <!-- The pretty blobs in the background -->
         <div class="blob blob1"></div>
         <div class="blob blob2"></div>
         <div class="blob blob3"></div>
         <h1>Technical Portfolio</h1>
         <p>With only the noteworthy projects</p>
         <div class="sections" id="techprojects">
+            <!--A div for all the technical projects with popup functions-->
+            <!--^All comments on this div also apply to all divs inside the techprojects div-->
             <div class="section" onclick="document.getElementById('hmjPopup').showModal()">
-                <h3>Hangman</h3>
-                <h4>Language: Java</h4>
-                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman_Java" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/Hangman_Java</a>
+                <h3>Hangman</h3> 
+                <!--The title of the project-->
+                <h4>Language: Java</h4> 
+                <!--The project's language(s)-->
+                <p>Github Repository: <a href="https://github.com/JolyaE/Hangman_Java" target="_blank" onclick="event.stopPropagation();">https://github.com/JolyaE/Hangman_Java</a> 
+                    <!--An href linking to the github repo--> 
+                    <!--^stop propagation makes it where the popup isnt triggered by clicking on the link-->
                 </p>
             </div>
+            <!--The popup dialog-->
             <dialog id="hmjPopup">
                 <h2>Project Details: Hangman <br>(Java Edition)</h2>
-                <hr>
+                <!--The title with the edition-->
+                <!--^The br is there for aesthetic purposes-->
                 <p><strong>Language:</strong> Java</p>
+                <!--The language-->
                 <p><strong>Overview:</strong> This console-based game dynamically reads a word bank file, validates user inputs, updates game states in real-time, and renders custom ASCII art for every stage.</p>
+                <!--A quick "about" section describing the game and sometimes providing additional commentary-->
                 <p>You can view the full source code and documentation directly on GitHub.</p>
+                <!--Lets them know again that the code is on github-->
                 <form method="dialog">
                     <button class="close-btn">Close Window</button>
+                    <!--A button to close the popup-->
                 </form>
             </dialog>
 
-
+            <!--^Again, all commentary for each individual div applies to all the following divs-->
             <div class="section" onclick="document.getElementById('hmsPopup').showModal()">
                 <h3>Hangman</h3>
                 <h4>Language: Swift</h4>
@@ -112,23 +125,34 @@
 
         </div>    
             <h2>Find more projects on my github: <a href="https://github.com/JolyaE" target="_blank">https://github.com/JolyaE</a></h2>
-        
+        <!--Lets them know that the projects im not proud of are on github-->
 
         <h1>Art Portfolio</h1>
+        <!--An art portfolio, just because tbh. OK TO BE FAIR it does show well-roundedness to recruiters maybe-->
         <p>With my favorite pieces, even if it's a little irrelevant, displayed from oldest to newest</p>
         <div class="sections" id="artprojects">
+            <!--Also a div for all art pieces with popups to provide more details-->
+            <!--^All comments, again, apply to all following divs as well-->
             <div class="section" onclick="document.getElementById('grpvinepu').showModal()">
                 <h3>Down in Grapevine</h3>
+                <!--The title of the piece-->
                 <img src="art/mainst.png" alt="Down in Grapevine" width="300px">
+                <!--The src image-->
             </div>
             <dialog id="grpvinepu">
-                <h2>Details: Down in Grapevine</h2>
+                <h2>Details: Down in Grapevine</h2> 
+                <!--Again, the title-->
                 <img src="art/mainst.png" alt="Down in Grapevine" width="300px">
+                <!--The src img-->
                 <p><strong>Medium:</strong> Pen</p>
+                <!--Which medium I used-->
                 <p><strong>Year:</strong> Fall 2024</p>
+                <!--The year and semester I made it-->
                 <p><strong>Note:</strong> This piece was actually selected to be in the GCISD art coloring book, which is still yet to be printed!</p>
+                <!--Sometimes is there, sometimes omitted. Provides additional details or fun facts-->
                 <form method="dialog">
                     <button class="close-btn">Close Window</button>
+                    <!--The close button for the popup-->
                 </form>
             </dialog>
 

@@ -151,7 +151,7 @@ function render() {
   
   container.innerHTML = `
     <div class="hangman-container">
-      <h1> HANGMAN </h1>
+      <h1> Hangman </h1>
       
       <div class="game-stats">
         <div class="stat">Score: <span>${score}/${totalGames}</span></div>
