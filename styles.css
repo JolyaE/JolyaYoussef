@@ -122,6 +122,7 @@ nav a:hover, button:hover{
 
 #tldr{   
     margin: 0 auto;
+    margin-top: 5%;
 }
 .section h2{
     color:#ac0170;
